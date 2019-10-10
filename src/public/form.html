@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/img/logo.png" rel="shortcut icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>IRONWARRIORS</title>
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" style="color:#D12B1D" href="/">
+                IRONWARRIORS <img src="/img/logo_b2.png" alt="..." style="width: 15%;margin-top: -3%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <!--  {{#if user}} -->
+
+                    <!--    {{else}} -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#q_somos">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">HEAD COACH</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#atletas">TEAM</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTANOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/signin">
+                            <i class="fas fa-sign-in-alt" style="color:white;"></i> </a>
+                    </li>
+                    <!--  {{/if}} -->
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!---CODIGO LOGIN-->
+
+    <div class="login-wrap" id="loginbody">
+        <div class="login-html">
+
+
+            <div class="login-form">
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <div class="container">
+                            <label for="tab-2" class="tab">Registrarse</label>
+                            <div class="row">
+                                <div class="col-6" id="nombre">
+                                    <label for="" class="label">Nombre :</label>
+                                    <input id="nomb" type="text" class="input">
+
+                                    <label for="" class="label">fecha nacimiento :</label>
+                                    <input id="fecha" type="text" class="input">
+                                </div>
+                                <div class="col-6">
+                                    <label for="" class=" label">Telefono :</label>
+                                    <input id="fono" type="text" class="input">
+
+                                    <label for="" class="label">edad :</label>
+                                    <input id="edad" type="text" class="input">
+                                </div>
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="container">
+                            <label for="tab-2" class="tab">OBJETIVO DEPORTIVO </label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check1">
+                                        <label class="form-check-label" for="check1">
+                                            RUNNING
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check2">
+                                        <label class="form-check-label" for="check2">
+                                            CICLISMO
+                                        </label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check3">
+                                        <label class="form-check-label" for="check3">
+                                            NATACION
+                                        </label>
+
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check4">
+                                        <label class="form-check-label" for="check4">
+                                            ACONDICIONAMIENTO FISICO
+                                        </label>
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check5">
+                                        <label class="form-check-label" for="check5">
+                                            FUERZA
+                                        </label>
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check6">
+                                        <label class="form-check-label" for="check6">
+                                            OTRO :
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="input-group" id="otro">
+                                <textarea class="form-control" aria-label="With textarea" style="font-size: 12px;
+                                              font-family:  'Oswald', sans-serif;
+                                              font-weight: lighter; color:#FFFFFF; background: rgba(255,255,255,.1);">
+                                    </textarea>
+                            </div>
+
+                            <br>
+                            <label for="tab-2" class="tab">CARACTERÍSTICAS</label>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="" class="label">talla : </label>
+                                    <input id="talla" type="text" class="input">
+                                </div>
+                                <div class="col-4">
+                                    <label for="" class="label">peso : </label>
+                                    <input id="peso" type="text" class="input">
+                                </div>
+                                <div class="col-4">
+                                    <label for="" class="label">grupo sanguineo : </label>
+                                    <input id="peso" type="text" class="input">
+                                </div>
+                            </div>
+                            <BR>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="" class="label">% grasa : </label>
+                                    <input id="talla" type="text" class="input">
+                                </div>
+                                <div class="col-4">
+                                    <label for="" class="label">CIRCUNFERENCIA CINTURA : </label>
+                                    <input id="peso" type="text" class="input">
+                                </div>
+                                <div class="col-4">
+                                    <label for="" class="label">CIRCUN. MEDIO MUSLO :</label>
+                                    <input id="peso" type="text" class="input">
+                                </div>
+                            </div>
+                            <BR>
+                            <label for="tab-2" class="tab">ANTECEDENTES O PATOLOGÍAS</label>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="" class="label">LESIONES RECIENTES : </label>
+                                    <input style="margin-top: -0.6%" id="lesion" type="text" class="input">
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="" class="label">OTROS DEPORTES O ACTIVIDADES : </label>
+                                    <input style="margin-top: -0.6%" id="lesion" type="text" class="input">
+                                </div>
+                            </div>
+                            <br>
+                            <label style=" font-size: 14px;" for="tab-2" class="tab">MARQUE CON UNA CRUZ O RESALTE EN
+                                CADA PREGUNTA EN CASO LA RESPUESTA SEA POSITIVA</label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check7">
+                                        <label class="form-check-label" for="check7">¿Sufre mareos?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check8">
+                                        <label class="form-check-label" for="check8">¿Ha sufrido desmayos?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check9">
+                                        <label class="form-check-label" for="check9">¿Tiene dolores en las
+                                            articulaciones?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check10">
+                                        <label class="form-check-label" for="check10">¿Presenta problemas de rodilla y/o
+                                            tobillos?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check11">
+                                        <label class="form-check-label" for="check11">¿Tuvo problemas cardíacos o
+                                            cardiovasculares?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check12">
+                                        <label class="form-check-label" for="check12">¿Tienes dolores lumbares, en
+                                            alguna
+                                            posición en específico?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check13">
+                                        <label class="form-check-label" for="check13">¿Está ingiriendo
+                                            medicaciones?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check14">
+                                        <label class="form-check-label" for="check14">¿Trabaja más de 8 horas
+                                            sentado?</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check15">
+                                        <label class="form-check-label" for="check15">¿Tiene dolor de cabeza con
+                                            frecuencia?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check16">
+                                        <label class="form-check-label" for="check16">¿Sufre hemorragias
+                                            nasales?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check17">
+                                        <label class="form-check-label" for="check17">¿Presenta pie plano o
+                                            similar?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check18">
+                                        <label class="form-check-label" for="check18">¿Ha sufrido convulsiones?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check19">
+                                        <label class="form-check-label" for="check19">¿Tiene dolores cervicales?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check20">
+                                        <label class="form-check-label" for="check20">¿En la actualidad estas bajo algún
+                                            tratamiento médico?</label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check21">
+                                        <label class="form-check-label" for="check21">¿Considera que su calidad de sueño
+                                            es baja? </label>
+
+                                    </div>
+                                    <div class="form-check checkbox-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="check22">
+                                        <label class="form-check-label" for="check22">¿Toma baños de sol? </label>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="container">
+                                <div class="row">
+                                    <label style="font-size: 12px;
+                                               font-family:  'Oswald', sans-serif;
+                                               font-weight: lighter; " for="tab-2" class="tab">EN CASO DE HABER
+                                        MARCADO UNA O MAS OPCIONES DESCRIBALA EN ESPECÍFICO :</label>
+                                    <br>
+                                    <div class="input-group" id="otro">
+                                        <textarea class="form-control" aria-label="With textarea" style=" background: rgba(255,255,255,.1);font-size: 12px;
+                                                      font-family:  'Oswald', sans-serif;
+                                                      font-weight: lighter; color:#FFFFFF;">
+                                            </textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        <BR>
+                        <div class="container">
+                            <label for="tab-2" class="tab">OBJETIVOS</label>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="" class="label">En pocas líneas describe tus intenciones con respecto a
+                                        seguir un plan para la salud y el deporte : </label>
+                                    <input style="margin-top: -0.6%" id="lesion" type="text" class="input">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <BR>
+                        <div class="container">
+                            <label for="tab-2" class="tab">ALIMENTACIÓN </label>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="" class="label">Descríbeme tu alimentación en un día tradicional (la
+                                        mayor sinceridad y detalle posible para poder entenderte y ver en que podemos
+                                        mejorarlo) considera todas las comidas, bebidas, snacks, meriendas, bebidas y
+                                        comidas especiales : </label>
+                                    <div class="input-group" id="otro">
+
+                                        <textarea class="form-control" aria-label="With textarea" style=" background: rgba(255,255,255,.1);font-size: 12px;
+                                                      font-family:  'Oswald', sans-serif;
+                                                      font-weight: lighter; color:#FFFFFF;    HEIGHT: 250px;">
+ DESAYUNO :
+
+ MEDIA MAÑANA :
+
+ ALMUERZO :
+
+ MEDIA TARDE :
+
+ CENA :
+
+ FINES DE SEMANA :
+
+ OCACIONES ESPECIALES :
+                                            </textarea>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+<style>
+    /* STYLE LOGIN */
+
+    #loginbody {
+
+        color: #FFFFFF;
+        font: 16px/18px 'Oswald', sans-serif;
+    }
+
+    *,
+    :after,
+    :before {
+        box-sizing: border-box
+    }
+
+    .clearfix:after,
+    .clearfix:before {
+        content: '';
+        display: table
+    }
+
+    .clearfix:after {
+        clear: both;
+        display: block
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none
+    }
+
+    /*fondo loguin-editar aca*/
+    .login-wrap {
+
+        margin: auto;
+        max-width: 96%;
+        min-height: 1420px;
+        position: relative;
+    }
+
+    .login-html {
+        margin-top: 2%;
+        width: 100%;
+        height: 100%;
+        border-radius: 2%;
+        position: absolute;
+        padding: 20px 10px 20px 10px;
+        background: #272727;
+    }
+
+    .login-html .sign-up-htm {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .login-html .sign-up,
+    .login-form .group .check {
+        display: none;
+    }
+
+    .login-html .tab,
+    .login-form .group .label,
+    .login-form .group .button {
+        text-transform: uppercase;
+    }
+
+    .login-html .tab {
+
+        font-size: 17px;
+        margin-right: 15px;
+        padding-bottom: 5px;
+        margin: 0 15px 10px 0;
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+    }
+
+    .login-html .sign-up:checked+.tab {
+        color: #FFFFFF;
+        border-color: #D12B1D;
+    }
+
+    .login-form {
+
+        min-height: 345px;
+        position: relative;
+        perspective: 1000px;
+        transform-style: preserve-3d;
+    }
+
+    .login-form .group {
+        margin-bottom: 15px;
+    }
+
+    .login-form .group .label,
+    .login-form .group .input,
+    .login-form .group .button {
+        width: 100%;
+        color: #fff;
+        display: block;
+        font-weight: lighter;
+        font-size: 12px;
+    }
+
+    .login-form .group .input,
+    .login-form .group .button {
+        border: none;
+        border-color: #D12B1D;
+        padding: 4px 12px;
+        border-radius: 25px;
+        background: rgba(255, 255, 255, .1);
+    }
+
+    .login-form .group .label {
+        color: white;
+        font-size: 12px;
+        margin-bottom: 1%;
+        font-weight: lighter;
+
+    }
+
+    .login-form .group .button {
+        background: #D12B1D;
+    }
+
+    .login-form .group label .icon {
+        width: 15px;
+        height: 15px;
+        border-radius: 2px;
+        position: relative;
+        display: inline-block;
+        background: rgba(255, 255, 255, .1);
+    }
+
+    .login-form .group label .icon:before,
+    .login-form .group label .icon:after {
+        content: '';
+        width: 10px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        transition: all .2s ease-in-out 0s;
+    }
+
+    .login-form .group label .icon:before {
+        left: 3px;
+        width: 5px;
+        bottom: 6px;
+        transform: scale(0) rotate(0);
+    }
+
+    .login-form .group label .icon:after {
+        top: 6px;
+        right: 0;
+        transform: scale(0) rotate(0);
+    }
+
+    .login-form .group .check:checked+label {
+        color: #fff;
+    }
+
+    .login-form .group .check:checked+label .icon:before {
+        transform: scale(1) rotate(45deg);
+    }
+
+    .login-form .group .check:checked+label .icon:after {
+        transform: scale(1) rotate(-45deg);
+    }
+
+    .login-html .sign-in:checked+.tab+.sign-up+.tab+.login-form .sign-in-htm {
+        transform: rotate(0);
+    }
+
+    .login-html .sign-up:checked+.tab+.login-form .sign-up-htm {
+        transform: rotate(0);
+    }
+
+    .hr {
+        height: 2px;
+        margin: 32px 0 50px 0;
+        background: rgba(255, 255, 255, .2);
+    }
+
+    .foot-lnk {
+        margin-top: -5%;
+        text-align: center;
+
+    }
+
+    #nombre {
+        font-size: 12px;
+        font-family: 'Oswald', sans-serif;
+
+    }
+
+    /* checkbox */
+
+    .checkbox-3 {
+        padding: 0;
+        font-size: 12px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: lighter;
+    }
+
+    .checkbox-3 input:checked~label:before {
+        content: '\2713';
+        text-indent: .6em;
+        line-height: 1.8em;
+        color: #fff;
+        background-color: #D12B1D;
+        border: none;
+    }
+
+    .checkbox-3 label:before {
+        content: '';
+        color: #fff;
+        font-size: .7em;
+        border: 1px solid #BDBDBD;
+        width: 1.8em;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        transition: .3s, line-height .15s;
+        text-indent: .5em;
+        line-height: 5em;
+        overflow: hidden;
+    }
+
+    .checkbox-3 label {
+        position: relative;
+        line-height: 1.3em;
+        text-indent: 1.8em;
+        display: inline-block;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .checkbox-3 input {
+        display: none;
+    }
+
+    .checkbox-3 {
+        padding: 0;
+    }
+
+    .checkbox-3 input:checked~label:before {
+        content: '\2713';
+        text-indent: .6em;
+        line-height: 1.8em;
+        color: #fff;
+        background-color: #D12B1D;
+        border: none;
+    }
+</style>
+
+</html>
